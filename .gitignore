@@ -1,0 +1,27 @@
+.env
+*.db
+site/
+__pycache__/
+.pytest_cache/
+.venv/
+.claude/state/
+.DS_Store
+
+# agent runtime state and local config (never publish)
+.claude/settings.local.json
+.claude/handoffs/
+.claude/**/__pycache__/
+.mcp.json
+.cursor/mcp.json
+.vscode/mcp.json
+.codex/
+.env.*
+!.env.example
+*.sqlite*
+*.pem
+*.key
+
+# >>> env files (ai-swe-setup env-ignore): never commit .env*, except .env.example
+.env*
+!.env.example
+# <<< env files
